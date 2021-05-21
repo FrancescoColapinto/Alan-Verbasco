@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Verbasco Photographer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <script src="assets/script/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="slider">
+        <div class="logoname">
+            <img id="logo" src="assets/img/logo.png" alt="logo">
+            <h1>Alan Verbasco</h1>
+        </div>
+        <nav>
+
+            <ul class="shortcut">
+                <li> <a href="index.html">HOME</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">BOOK A SHOOTING</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <p class="linea"></p>
+            <a href="https://www.instagram.com/bigalan_ph/"><i class="fab fa-instagram"></i></a>
+            <p class="linea"></p>
+        </div>
+    </header>
+    <main>
+        <div class="phar">
+            <div class="slide-in phar1">
+                <h2>Alan Verbasco</h2>
+                <p>Ciao, sono Alan, fotografo e cacciatore di sparvieri da oltre 12 anni. Vi volevo presentare il mio 
+                    nuovo sito internet ricco di divertenti immagini di modelle, caprini e tortorelle, animali di una
+                    violenza inaudita. Se per caso avete 5 di nera che devo andare a caccia di Navi mi fate un piacere. <br>
+                    Grazie.
+                </p>
+                <div class="image">
+                    <div class="geo"></div>
+                </div>
+            </div>
+            <div class="slide-in phar2">
+                <p>Oltre a fotografare modelle, fotografo anche i piedi di Vincenzo da via Anfossi, le calendule dell'oltrepo 
+                    barese, le montagne del Peloponneso e le decorazioni natalizie della casa in campagna di Alda Deusanio.
+                </p>
+                <div class="image2">
+                    <div class="geo2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <h3>Cinque di Nera?</h3>
+            <p>Ne ho bisogno ti prego</p>
+        </div>
+        <div class="phar">   
+            <div class="slide-in phar1">
+                <p>Ciao, sono Alan, fotografo e cacciatore di sparvieri da oltre 12 anni. Vi volevo presentare il mio 
+                    nuovo sito internet ricco di divertenti immagini di modelle, caprini e tortorelle, animali di una
+                    violenza inaudita. Se per caso avete 5 di nera che devo andare a caccia di Navi mi fate un piacere. <br>
+                    Grazie.
+                </p>
+                <div class="image">
+                    <div class="geo"></div>
+                </div>
+            </div>
+            <div class="slide-in phar2">
+                <p>Oltre a fotografare modelle, fotografo anche i piedi di Vincenzo da via Anfossi, le calendule dell'oltrepo 
+                    barese, le montagne del Peloponneso e le decorazioni natalizie della casa in campagna di Alda Deusanio.
+                </p>
+                <div class="image2">
+                    <div class="geo2"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script>
+    $(document).ready(function () {
+        $(".shortcut").animate({
+            width: "toggle"
+        }, 1000);
+        $(".logoname").fadeIn(2000);
+        $(".geo").mouseenter(function(){
+            $(".image").animate({
+                padding: "0"
+            },500)
+        })
+        $(".geo").mouseleave(function(){
+            $(".image").animate({
+                padding: "20px"
+            },500)
+        })
+        $(".geo2").mouseenter(function(){
+            $(".image2").animate({
+                padding: "0"
+            },500)
+        })
+        $(".geo2").mouseleave(function(){
+            $(".image2").animate({
+                padding: "20px"
+            },500)
+        })
+    });
+</script>
+
+</html>

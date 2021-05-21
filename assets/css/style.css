@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none;}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+.slider {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    animation-name: immagini;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    background-position: top;
+    background-size: cover;
+    background-position-y:-150px;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid black;
+}
+.logoname {
+    display: none;
+}
+#logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+h1 {
+    width: 180px;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 2000;
+
+}
+
+.shortcut {
+    margin-top: 50px;
+    background-color: rgba(240, 248, 255, 0.687);
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px 0 0 30px;
+    display: none;
+    box-shadow: 0 0 20px rgb(177, 177, 177);
+    
+}
+.shortcut li{
+    display: inline;   
+    font-family: 'Signika', sans-serif;
+    font-size: 17px;
+    padding:40px;  
+}
+.shortcut li a {
+    text-decoration: none;
+    color: black;
+    
+}
+li a:hover {
+    text-shadow: 0 0 10px black;
+    color: white;
+    animation-name: navigazione;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    border-bottom:2px solid black;
+}
+@keyframes immagini {
+    0% {
+        background-image: url("../img/homeslider/photo\(1\).jpg");
+    }
+    23% {
+        background-image: url("../img/homeslider/photo\(1\).jpg");
+    }
+    25% {
+        background-image: url("../img/homeslider/photo\(2\).jpg");
+    }
+    48% {
+        background-image: url("../img/homeslider/photo\(2\).jpg");
+    }
+    50% {
+        background-image: url("../img/homeslider/photo\(3\).jpg");
+    }
+    73% {
+        background-image: url("../img/homeslider/photo\(3\).jpg");
+    }
+    75% {
+        background-image: url("../img/homeslider/photo\(4\).jpg");
+    }
+    98% {
+        background-image: url("../img/homeslider/photo\(4\).jpg");
+    }
+    100% {
+        background-image: url("../img/homeslider/photo\(1\).jpg");
+    }
+}
+
+@keyframes navigazione {
+    0% {
+        text-shadow: none;
+        color: black;
+        border-bottom: 2px solid rgb(240, 248, 255)
+    }
+    100% {
+        text-shadow: 0 0 10px black;
+        color: white;
+        border-bottom: 2px solid black;
+    }
+}
+.social {
+    position:absolute;
+    bottom: 5vh;
+    display: flex;
+    margin-left: 30px;
+
+}
+.linea {
+    width:50px;
+    background-color: black;
+    height: 1px;
+    margin-top: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    color: black;
+    padding-left:10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+.social a:hover {
+    text-shadow: 0 0 20px black;
+    color: aliceblue;
+    animation-name: socialcursor;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes socialcursor {
+    0% {
+        color: black;
+    }
+    100% {
+        text-shadow: 0 0 20px black;
+        color: aliceblue;
+        }
+}
+main {
+    background-color: aliceblue;
+}
+.image{
+    background-image: url('../img/home/phar1.JPG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+}
+.image2{
+    background-image: url('../img/home/phar2.JPG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+    
+}
+.geo, .geo2{
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    box-shadow: 0 0 10px grey;
+    position: relative;
+
+}
+.phar {
+    width: 1172px;;
+    margin:0 auto;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    border-right: 4px solid white;
+    border-left: 4px solid white;
+    height: 1300px;
+}
+h2 {
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 60px;
+}
+.phar1 p, .phar2 p{
+
+    font-size: 30px;
+    margin-bottom: 100px;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 36px;
+}
+
+.phar2 {
+    text-align: right;
+    width: 40%;
+    transform: translateX(50%);
+    height: 800px;
+    margin-top: 200px;
+}
+.phar1 {
+    width:40%;
+    transform: translateX(-50%);
+    height: 1000px;
+}
+.phar1, .phar2 {
+    transition: transform 400ms ease-in;
+}
+.appear, .appear {
+    transform: translateX(0);
+}
+.banner  {
+    background-image: url('../img/home/banner1.jpg');
+    width: 100%;
+    background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position-y: -500px;
+    box-shadow: 0 0 10px grey;
+}
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: aliceblue;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 140px;
+}
+.banner p {
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+main .phar:last-child {
+    margin-top: 100px;
+}
+main .phar:last-child .phar2 {
+    padding-top: 0;
+}
+main .phar:last-child .phar1 {
+    padding-top: 300px;
+}
