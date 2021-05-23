@@ -205,7 +205,7 @@ h2 {
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 60px;
 }
-.phar1 p, .phar2 p{
+.slide-in p{
 
     font-size: 30px;
     margin-bottom: 100px;
@@ -213,22 +213,22 @@ h2 {
     line-height: 36px;
 }
 
-.phar2 {
+.phar2{
     text-align: right;
     width: 40%;
-    transform: translateX(50%);
+    transform: translateX(0);
     height: 800px;
-    margin-top: 200px;
+    margin-top: 500px;
 }
-.phar1 {
+.phar1{
     width:40%;
-    transform: translateX(-50%);
+    transform: translateX(0);
     height: 1000px;
 }
-.phar1, .phar2 {
+.slide-in {
     transition: transform 400ms ease-in;
 }
-.appear, .appear {
+.appear {
     transform: translateX(0);
 }
 .banner  {
@@ -254,12 +254,50 @@ h3 {
     padding-top: 20px;
     font-family: 'Cormorant Garamond', serif;
 }
-main .phar:last-child {
-    margin-top: 100px;
-}
 main .phar:last-child .phar2 {
     padding-top: 0;
 }
 main .phar:last-child .phar1 {
     padding-top: 300px;
+}
+
+footer {
+    background-color: rgb(223, 255, 254);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 30px rgb(89, 89, 89);
+}
+
+.end {
+    width: 1172px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-around;
+
+}
+
+footer img{
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
+}
+.line {
+    background-color: rgb(184, 184, 184);
+    width: 1px;
+    height: 300px;
+}
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contacts {
+    padding-top: 200px;
+}
+.end ul {
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contacts a {
+    text-decoration: none;
+    color: black;
 }
