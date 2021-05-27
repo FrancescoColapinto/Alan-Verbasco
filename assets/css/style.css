@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
-/*
-*  html5resetcss
-*/
+
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
@@ -18,7 +16,7 @@ abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
-
+/* Header */
 .slider {
     display: flex;
     align-items:flex-start;
@@ -35,54 +33,7 @@ input,select{vertical-align:middle}
     background-repeat: no-repeat;
     border-bottom: 3px solid black;
 }
-.logoname {
-    display: none;
-}
-#logo {
-    width: 70px;
-    height: 70px;
-    margin-left: 40px;
-    margin-top: 30px;
-}
-h1 {
-    width: 180px;
-    margin-top: 10px;
-    margin-left: 40px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 2000;
-
-}
-
-.shortcut {
-    margin-top: 50px;
-    background-color: rgba(240, 248, 255, 0.687);
-    height: 50px;
-    line-height: 50px;
-    border-radius: 30px 0 0 30px;
-    display: none;
-    box-shadow: 0 0 20px rgb(177, 177, 177);
-    
-}
-.shortcut li{
-    display: inline;   
-    font-family: 'Signika', sans-serif;
-    font-size: 17px;
-    padding:40px;  
-}
-.shortcut li a {
-    text-decoration: none;
-    color: black;
-    
-}
-li a:hover {
-    text-shadow: 0 0 10px black;
-    color: white;
-    animation-name: navigazione;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-in-out;
-    border-bottom:2px solid black;
-}
+/*Animazione per creare lo sliding delle immagini in background sull'header*/
 @keyframes immagini {
     0% {
         background-image: url("../img/homeslider/photo\(1\).jpg");
@@ -112,6 +63,61 @@ li a:hover {
         background-image: url("../img/homeslider/photo\(1\).jpg");
     }
 }
+/*logo in alto a sinistra*/
+.logoname {
+    display: none;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+h1 {
+    width: 180px;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 2000;
+
+}
+/*fine logo*/
+/*barra di navigazione*/
+.shortcut {
+    margin-top: 50px;
+    background-color: rgba(240, 248, 255, 0.687);
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px 0 0 30px;
+    display: none;
+    box-shadow: 0 0 20px rgb(177, 177, 177);
+    
+}
+
+.shortcut li{
+    display: inline;   
+    font-family: 'Signika', sans-serif;
+    font-size: 17px;
+    padding:40px;  
+}
+
+.shortcut li a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+li a:hover {
+    text-shadow: 0 0 10px black;
+    color: white;
+    animation-name: navigazione;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    border-bottom:2px solid black;
+}
 
 @keyframes navigazione {
     0% {
@@ -125,6 +131,8 @@ li a:hover {
         border-bottom: 2px solid black;
     }
 }
+/*fine barra di navigazione*/
+/*link per social instagram in basso a sinistra sull'header*/
 .social {
     position:absolute;
     bottom: 5vh;
@@ -153,6 +161,7 @@ li a:hover {
     animation-duration: 0.3s;
     animation-timing-function: ease-in-out;
 }
+
 @keyframes socialcursor {
     0% {
         color: black;
@@ -162,9 +171,11 @@ li a:hover {
         color: aliceblue;
         }
 }
+/*fine link social*/
 main {
     background-color: aliceblue;
 }
+/*immagini dei paragrafi*/
 .image{
     background-image: url('../img/home/phar1.JPG');
     background-size: contain;
@@ -173,6 +184,7 @@ main {
     height: 450px;
     padding: 20px;
 }
+
 .image2{
     background-image: url('../img/home/phar2.JPG');
     background-size: contain;
@@ -180,9 +192,28 @@ main {
     width: 300px;
     height: 450px;
     padding: 20px;
+}
+
+.image3{
+    background-image: url('../img/home/phar3.JPG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 300px;
+    padding: 20px;
+}
+
+.image4{
+    background-image: url('../img/home/phar4.JPG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 300px;
+    padding: 20px;
     
 }
-.geo, .geo2{
+
+.geo, .geo2{ /*rettangoli bianchi all'interno delle immagini*/
     width: 100%;
     height: 100%;
     border: 2px solid white;
@@ -190,6 +221,7 @@ main {
     position: relative;
 
 }
+/*contenitori dei paragrafi*/
 .phar {
     width: 1172px;;
     margin:0 auto;
@@ -200,37 +232,83 @@ main {
     border-left: 4px solid white;
     height: 1300px;
 }
-h2 {
+.phardown {
+    width: 1172px;;
+    margin:0 auto;
+    padding: 80px;
+    border-right: 4px solid white;
+    border-left: 4px solid white;
+    height: 1100px;
+}
+h2 { /*titoli paragrafi*/
     font-size: 50px;
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 60px;
 }
-.slide-in p{
+.slide-in p{ /*testi paragrafi*/
 
     font-size: 30px;
     margin-bottom: 100px;
     font-family: 'Cormorant Garamond', serif;
     line-height: 36px;
 }
-
+/*ogni classe pharN è un contenitore che contiene titolo,
+testo ed immagine del paragrafo*/
 .phar2{
     text-align: right;
     width: 40%;
-    transform: translateX(0);
+    transform: translateX(0); /*in realtà dovrebbe essere 50% per utilizzare Intersection Observer*/
     height: 800px;
     margin-top: 500px;
 }
 .phar1{
     width:40%;
-    transform: translateX(0);
+    transform: translateX(0);/*in realtà dovrebbe essere -50% per utilizzare Intersection Observer*/
     height: 1000px;
 }
-.slide-in {
+
+.slide-in { /*il tipo di transizione da translateX -50%/50% a 0*/
     transition: transform 400ms ease-in;
 }
-.appear {
+
+.appear { /*classe che voglio aggiungere tramite Intersection Observer*/
     transform: translateX(0);
 }
+
+.phar3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    padding-top:100px;
+}
+
+.phar3 p {
+    width: 40%;
+}
+
+.phar4{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    padding-top:300px;
+}
+
+.phar4 p {
+    width: 40%;
+    text-align: right;
+}
+
+main .phar:last-child .phar2 {
+    padding-top: 0;
+}
+
+main .phar:last-child .phar1 {
+    padding-top: 300px;
+}
+/*fine paragrafi*/
+/*banner*/
 .banner  {
     background-image: url('../img/home/banner1.jpg');
     width: 100%;
@@ -240,6 +318,7 @@ h2 {
     background-position-y: -500px;
     box-shadow: 0 0 10px grey;
 }
+
 h3 {
     font-family: 'Cormorant Garamond', serif;
     color: aliceblue;
@@ -247,6 +326,7 @@ h3 {
     text-align: center;
     padding-top: 140px;
 }
+
 .banner p {
     font-size: 20px;
     color: aliceblue;
@@ -254,13 +334,8 @@ h3 {
     padding-top: 20px;
     font-family: 'Cormorant Garamond', serif;
 }
-main .phar:last-child .phar2 {
-    padding-top: 0;
-}
-main .phar:last-child .phar1 {
-    padding-top: 300px;
-}
-
+/*fine banner*/
+/*footer*/
 footer {
     background-color: rgb(223, 255, 254);
     width: 100%;
