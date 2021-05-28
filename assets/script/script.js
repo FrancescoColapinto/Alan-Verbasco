@@ -43,8 +43,11 @@ $(document).ready(function () {
             padding: "20px"
         },500)
     })
+    $(".navbtn").click(function(){
+        $(".shortcut li").css("display", "inline")
+        $("nav").css("display", "block")
+    });
 });
-
 /*slider dei paragrafi*/
 const sliders = document.querySelectorAll(".slide-in"); /*seleziono tutti i miei paragrafi con classe slide-in*/
 

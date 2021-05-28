@@ -86,6 +86,7 @@ h1 {
 }
 /*fine logo*/
 /*barra di navigazione*/
+
 .shortcut {
     margin-top: 50px;
     background-color: rgba(240, 248, 255, 0.687);
@@ -118,7 +119,9 @@ li a:hover {
     animation-timing-function: ease-in-out;
     border-bottom:2px solid black;
 }
-
+li button {
+    display: none;
+}
 @keyframes navigazione {
     0% {
         text-shadow: none;
@@ -375,4 +378,124 @@ h4 {
 .contacts a {
     text-decoration: none;
     color: black;
+}
+
+
+@media (max-width: 1250px) {
+
+    .banner  {
+        background-position-y: -200px;
+
+    }
+    .phar {
+        width: 800px;;
+    }
+    .phardown {
+        width: 800px;;
+    }
+    .end {
+        width: 800px;
+    
+    }
+}
+@media (max-width: 1047px) {
+    .shortcut {
+        height: 40px;
+        line-height: 45px;
+        
+    }
+    .shortcut li{
+        font-size: 14px;
+        padding:25px;  
+    }
+}
+@media (max-width: 850px) {
+    .slider {
+        display: block;
+        background-position-y:0 ;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width:100%;
+        display: none;
+        
+        
+    }
+    .shortcut {
+        border-radius:0;
+        text-align: center;
+        width: 100%;
+        
+    }
+    .shortcut li{
+        display: inline;   
+        font-family: 'Signika', sans-serif;
+        padding:20px;
+        display: none;
+    }
+    
+    .shortcut li a {
+        text-decoration: none;
+        color: black;
+        
+    }
+    .navbtn {
+        display: inline;
+        cursor: pointer;
+        border:0;
+        background-color: rgba(240, 248, 255, 0.687);
+        width:30px;
+        height: 30px;
+        box-shadow: 0 0 20px rgb(177, 177, 177);
+
+    }
+    .navbtn:hover {
+        animation-name: navigazione;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in-out;
+        text-shadow: 0 0 10px black;
+        color: white;
+        border-bottom:2px solid black;
+
+    }
+    .phar {
+        display: block;
+        height: 2000px;
+        width: 80%;
+    }
+    .phar1 {
+        width: 90%;
+    }
+    .phar2 {
+        width: 90%;
+        margin-top: 0;
+    }
+    .banner {
+        background-position-y: 0;
+    }
+    .phardown {
+        align-items: center;
+        height: 1600px;
+        width: 80%;
+    }
+    .phar3 {
+        width: 90%;
+        height: 500px;
+        display: block;
+    }
+    .phar4 {
+        width: 90%;
+        margin-top: 0;
+        display: block;
+        height: 200px;
+    }
+    .phar3 p {
+        width: 90%;
+    }
+    .phar4 p {
+        width: 90%;
+        padding-top: 50px;
+    }
 }
