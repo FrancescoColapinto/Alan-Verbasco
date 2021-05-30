@@ -134,6 +134,9 @@ li button {
         border-bottom: 2px solid black;
     }
 }
+.navbtn {
+    display: none;
+}
 /*fine barra di navigazione*/
 /*link per social instagram in basso a sinistra sull'header*/
 .social {
@@ -248,9 +251,9 @@ h2 { /*titoli paragrafi*/
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 60px;
 }
-.slide-in p{ /*testi paragrafi*/
+.wow p{ /*testi paragrafi*/
 
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 100px;
     font-family: 'Cormorant Garamond', serif;
     line-height: 36px;
@@ -260,22 +263,12 @@ testo ed immagine del paragrafo*/
 .phar2{
     text-align: right;
     width: 40%;
-    transform: translateX(0); /*in realtà dovrebbe essere 50% per utilizzare Intersection Observer*/
     height: 800px;
     margin-top: 500px;
 }
 .phar1{
     width:40%;
-    transform: translateX(0);/*in realtà dovrebbe essere -50% per utilizzare Intersection Observer*/
     height: 1000px;
-}
-
-.slide-in { /*il tipo di transizione da translateX -50%/50% a 0*/
-    transition: transform 400ms ease-in;
-}
-
-.appear { /*classe che voglio aggiungere tramite Intersection Observer*/
-    transform: translateX(0);
 }
 
 .phar3{
@@ -287,7 +280,7 @@ testo ed immagine del paragrafo*/
 }
 
 .phar3 p {
-    width: 40%;
+    width: 35%;
 }
 
 .phar4{
@@ -299,7 +292,7 @@ testo ed immagine del paragrafo*/
 }
 
 .phar4 p {
-    width: 40%;
+    width: 35%;
     text-align: right;
 }
 
@@ -408,8 +401,14 @@ h4 {
         font-size: 14px;
         padding:25px;  
     }
+    .end {
+        width: 800px;
+    }
 }
 @media (max-width: 850px) {
+    .logoname {
+        visibility: hidden;
+    }
     .slider {
         display: block;
         background-position-y:0 ;
@@ -428,12 +427,17 @@ h4 {
         text-align: center;
         width: 100%;
         
+        
+    }
+    .shortcut li:first-child {
+        padding-left: 60px;
     }
     .shortcut li{
         display: inline;   
         font-family: 'Signika', sans-serif;
-        padding:20px;
+        padding: 7px;
         display: none;
+        font-size: 75%;
     }
     
     .shortcut li a {
@@ -441,23 +445,33 @@ h4 {
         color: black;
         
     }
-    .navbtn {
-        display: inline;
-        cursor: pointer;
-        border:0;
-        background-color: rgba(240, 248, 255, 0.687);
-        width:30px;
-        height: 30px;
-        box-shadow: 0 0 20px rgb(177, 177, 177);
-
-    }
-    .navbtn:hover {
+    li a:hover {
+        text-shadow: 0 0 10px black;
+        color: white;
         animation-name: navigazione;
         animation-duration: 0.3s;
         animation-timing-function: ease-in-out;
-        text-shadow: 0 0 10px black;
-        color: white;
         border-bottom:2px solid black;
+    }
+    .navbtn {
+        display: inline;
+        cursor: pointer;
+        position: fixed;
+        z-index: 3;
+        top: 35px;
+        border:0;
+        background-color: rgba(240, 248, 255, 0);
+        width: 70px;
+        height: 70px;
+
+    }
+    .navbtn img {
+        width: 70px;
+        height: 70px;
+    }
+    .navbtn img:hover {
+        transform: scale(1.2);
+        text-decoration: underline;
 
     }
     .phar {
@@ -497,5 +511,20 @@ h4 {
     .phar4 p {
         width: 90%;
         padding-top: 50px;
+    }
+    .image, .image2{
+        height: 300px;
+        width: 200px;
+    }
+    .image3, .image4{
+        height: 200px;
+        width: 300px;
+    }
+    .end {
+        width:300px;
+    }
+    footer img {
+        width: 150px;
+        height: 150px;
     }
 }

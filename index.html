@@ -8,8 +8,10 @@
     <title>Alan Verbasco Photographer</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +32,7 @@
            
             
         </nav>
-        <button class="navbtn">AV</button>
+        <button class="navbtn"><img src="assets/img/logo.png" alt="menu"></button>
         <div class="social">
             <p class="linea"></p>
             <a href="https://www.instagram.com/bigalan_ph/"><i class="fab fa-instagram"></i></a>
@@ -39,7 +41,7 @@
     </header>
     <main>
         <div class="phar">
-            <div class="slide-in phar1">
+            <div class="wow animate__fadeInLeft phar1" data-wow-duration="1s" data-wow-offset="200">
                 <h2>Alan Verbasco</h2>
                 <p>Ciao, sono Alan, Sono un fotografo freelance con base a Milano, ma lavoro su tutto il nord italia.
                     Sono un appassionato di fotografia da molti anni e sperimento sempre nuovi shooting fotografici e
@@ -49,7 +51,7 @@
                     <div class="geo"></div>
                 </div>
             </div>
-            <div class="slide-in phar2">
+            <div class="wow animate__fadeInRight phar2" data-wow-duration="1s" data-wow-offset="300">
                 <p>Tratto vari generi tra cui ritratti, fashion, eventi,glamour creepy/horror con le sue derivazioni.
                 </p>
                 <div class="image2">
@@ -62,17 +64,17 @@
             <p>Testo a piacere da definire</p>
         </div>
         <div class="phardown">
-            <div class="slide-in phar3">
+            <div class="wow animate__fadeInLeft phar3" data-wow-duration="1.5s" data-wow-offset="300" >
                 <p>Ho frequentato un corso di fotografia presso &dot;Sony&dot; dove ho appreso le tecniche base nel
                     2009,
                     dopodichè la passione è continuata e in maniera autodidatta ho imparato nuove tecniche di retouch
                     ,gestione luci e tecnica fotografica generica.
                 </p>
-                <div class="slide-in image3">
+                <div class=" image3">
                     <div class="geo"></div>
                 </div>
             </div>
-            <div class="slide-in phar4">
+            <div class="wow animate__fadeInRight phar4" data-wow-duration="1.5s" data-wow-offset="300">
                 <div class="image4">
                     <div class="geo2"></div>
                 </div>
@@ -100,5 +102,7 @@
         </div>
     </footer>
 </body>
-
+<script>
+    new WOW().init();
+</script>
 </html>
