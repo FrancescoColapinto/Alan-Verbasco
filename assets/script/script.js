@@ -45,6 +45,6 @@ $(document).ready(function () {
     })
     $(".navbtn").click(function(){
         $(".shortcut li").css("display", "inline")
-        $("nav").toggle(500)
+        $("nav").slideToggle(500);
     });
 });
