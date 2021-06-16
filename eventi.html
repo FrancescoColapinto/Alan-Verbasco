@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Verbasco Photographer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+</head>
+
+<body>
+    <div class="eventdescription">
+        <p class="exit">X</p>
+        <h3 class="eventitle">09/10/11 Luglio</h3>
+        <div id="slide">
+            <p class="prev"><i onclick="prev()" class="fas fa-chevron-circle-left"></i></p>
+            <img id="photoevent" src="assets/img/slideevent/1.jpg" alt="foto">
+            <p class="next"><i onclick="next()" class="fas fa-chevron-circle-right"></i></p>
+        </div>
+    </div>
+    <header class="headerevent">
+            <div class="logoname">
+                <img id="logo" src="assets/img/logowhite.png" alt="logo">
+                <h1 class="eventav">Alan Verbasco</h1>
+            </div>
+            <nav>
+
+                <ul class="shortcut">
+                    <li> <a href="index.html">HOME</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="eventi.html">EVENTS</a></li>
+                    <li><a href="#">BOOK A SHOOTING</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul>
+
+
+            </nav>
+        <button class="navbtn"><img src="assets/img/logowhite.png" alt="menu"></button>
+    </header>
+    <main>
+        <h2 class="title wow animate__fadeInDown" data-wow-duration="1s">Eventi</h2>
+        <ul class="eventlist">
+            <li>09-10-11 Luglio</li>
+        </ul>
+    </main>
+    <footer>
+        <div class="end">
+            <img src="assets/img/logo.png" alt="logo">
+            <div class="line"></div>
+            <div class="contacts">
+                <h4>Contatti:</h4>
+                <ul>
+                    <li>
+                        <i class="fas fa-paper-plane"></i>
+                        <a href="mailto:alanverbasco@gmail.com">alanverbasco@gmail.com</a>
+                    </li>
+                    <li><i class="fas fa-phone-alt"></i>+(39) 3290087344</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+</body>
+<script>
+    new WOW().init();
+</script>
+
+</html>

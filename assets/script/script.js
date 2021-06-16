@@ -47,4 +47,29 @@ $(document).ready(function () {
         $(".shortcut li").css("display", "inline")
         $("nav").slideToggle(500);
     });
+    $(".eventlist li").click(function() {
+        $(".eventdescription").slideToggle(500);
+
+    });
+    $(".exit").click(function() {
+        $(".eventdescription").css("display", "none");
+
+    });
 });
+
+var img = 1;
+
+function next() {
+    img ++;
+    if (img>13) {
+        img = 1;
+    }
+    document.querySelector("#photoevent").src = "assets/img/slideevent/" + img + ".jpg";
+}
+function prev() {
+    img --;
+    if (img<1) {
+        img = 13;
+    }
+    document.querySelector("#photoevent").src = "assets/img/slideevent/" + img + ".jpg";
+}

@@ -5,7 +5,7 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none;}
+ul{list-style:none;}
 blockquote,q{quotes:none}
 blockquote:before,blockquote:after,q:before,q:after{content:none}
 a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
@@ -117,7 +117,7 @@ li a:hover {
     animation-name: navigazione;
     animation-duration: 0.3s;
     animation-timing-function: ease-in-out;
-    border-bottom:2px solid black;
+    text-decoration: underline;
 }
 li button {
     display: none;
@@ -126,12 +126,14 @@ li button {
     0% {
         text-shadow: none;
         color: black;
-        border-bottom: 2px solid rgb(240, 248, 255)
+        text-decoration: none;
+        /*border-bottom: 2px solid rgb(240, 248, 255)*/
     }
     100% {
         text-shadow: 0 0 10px black;
         color: white;
-        border-bottom: 2px solid black;
+        text-decoration: underline;
+        /*border-bottom: 2px solid black;*/
     }
 }
 .navbtn {
@@ -251,7 +253,7 @@ h2 { /*titoli paragrafi*/
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 60px;
 }
-.wow p{ /*testi paragrafi*/
+.phar1 p, .phar2 p, .phar3 p, .phar4 p{ /*testi paragrafi*/
 
     font-size: 28px;
     margin-bottom: 100px;
@@ -406,12 +408,16 @@ h4 {
     }
 }
 @media (max-width: 850px) {
-    .logoname {
+    .logoname{
         visibility: hidden;
     }
-    .slider {
-        display: block;
-        background-position-y:0 ;
+    .logonamevent{
+        position: static;
+        display: none;
+    }
+    header{
+        display:block;
+        background-position-y:0 !important; 
     }
     nav {
         position: fixed;
@@ -526,4 +532,89 @@ h4 {
         width: 150px;
         height: 150px;
     }
+    #photoevent {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+/*Eventi*/
+.headerevent {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 30vh;
+    background-image: url("../img/Event.JPG");
+    background-position: top;
+    background-size: cover;
+    background-position-y:-150px;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid black;
+}
+.title {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 150px;
+    color: black;
+}
+.eventav {
+    color: aliceblue;
+}
+.eventlist {
+    font-size: 40px;
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
+    font-family:'Cormorant Garamond', serif ;
+}
+.eventlist {
+    text-align: center;
+}
+.eventlist li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-shadow: 0 0 10px black;
+    color: white;
+    animation-name: navigazione;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+.eventdescription {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.eventitle {
+    color: black;
+}
+.exit {
+    position: relative;
+    left: 90%;
+    text-align: center;
+    margin: 50px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 29px;
+    font-family:'Josefin Sans', sans-serif  ;
+    cursor: pointer;
+}
+#slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.prev i, .next i{
+    cursor: pointer;
+    font-size: 30px;
+}
+#photoevent {
+    box-shadow: 0 0 10px;
 }
