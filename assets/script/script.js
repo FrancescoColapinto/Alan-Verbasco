@@ -48,12 +48,15 @@ $(document).ready(function () {
         $("nav").slideToggle(500);
     });
     $(".eventlist li").click(function() {
-        $(".eventdescription").slideToggle(500);
+        $(".eventbackground").slideToggle(500);
 
     });
     $(".exit").click(function() {
-        $(".eventdescription").css("display", "none");
+        $(".eventbackground").css("display", "none");
 
+    });
+    $(".comingsoon").click(function() {
+        alert("Coming Soon");
     });
 });
 
