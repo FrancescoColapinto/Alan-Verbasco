@@ -48,7 +48,7 @@ $(document).ready(function () {
         $("nav").slideToggle(500);
     });
     $(".eventlist li").click(function() {
-        $(".eventbackground").slideToggle(500);
+        alert("Evento Non Disponibile");
 
     });
     $(".exit").click(function() {
